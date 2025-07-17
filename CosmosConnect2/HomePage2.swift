@@ -27,9 +27,15 @@ struct HomePage2: View {
                                 .frame(height: 35)
                                 .padding([.top, .leading, .trailing])
 
+                            
+                            //comment this out!
+                          // Text("guys i got it to work! Aa Bb Cc")
+                            //  .font(.custom("Comfortaa-Regular", size: 10))
+                        
                             Text("Cosmo Connect")
+                                .font(.custom("Comfortaa-Regular", size: 30))
                                 .font(.title)
-                                .fontWeight(.semibold)
+                                .fontWeight(.bold)
                                 .foregroundColor(Color.white)
                                 .padding(.top)
                             Spacer()
