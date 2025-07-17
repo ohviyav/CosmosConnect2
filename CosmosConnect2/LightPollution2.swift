@@ -33,6 +33,7 @@ struct LightPollution2: View {
                     Spacer(minLength: 30)
                     Text("Light Pollution").font(.system(size: 35)).fontWeight(.black).multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
+                        .padding(.top)
                     Spacer()
                     Text("What even is light pollution?").font(.system(size: 25)).padding()
                         .foregroundColor(Color.white)
@@ -134,6 +135,7 @@ struct LightPollution2: View {
                             //newZIndex = newVIndex
                             //newVIndex = newTempIndex
                         }
+                        .padding(.bottom)
                         .foregroundColor(Color.white)
                     }
                     

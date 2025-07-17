@@ -8,6 +8,7 @@ struct MainTabView: View {
             }
             .tabItem {
                 Image(systemName: "house.fill")
+                    .foregroundColor(Color.white)
                 Text("Home")
             }
             
@@ -16,6 +17,7 @@ struct MainTabView: View {
             }
             .tabItem {
                 Image(systemName: "suit.heart.fill")
+                    .foregroundColor(Color.white)
                 Text("Favorites")
             }
             
@@ -24,6 +26,7 @@ struct MainTabView: View {
             }
             .tabItem {
                 Image(systemName: "rays")
+                    .foregroundColor(Color.white)
                 Text("Light Pollution")
             }
         }
