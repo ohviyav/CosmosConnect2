@@ -1,19 +1,22 @@
 //
 //  ContentView.swift
-//  CosmosConnect2
+//  CosmosConnect
 //
-//  Created by Scholar on 7/16/25.
+//  Created by Scholar on 7/14/25.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = NasaImageViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 10) {
+            Text("Cosmos Connect")
+                .font(.system(size:40))
+                .fontWeight(.bold)
+            NasaImageView2()
+            Spacer()
         }
         .padding()
     }
