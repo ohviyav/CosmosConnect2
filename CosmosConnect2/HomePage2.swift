@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HomePage2: View {
-    @StateObject private var viewModel = NasaImageViewModel()
     var body: some View {
         NavigationStack {
             ZStack {
@@ -29,9 +28,7 @@ struct HomePage2: View {
                                 .padding([.top, .leading, .trailing])
 
                             
-                            //comment this out!
-                          // Text("guys i got it to work! Aa Bb Cc")
-                            //  .font(.custom("Comfortaa-Regular", size: 10))
+// .font(.custom("Comfortaa-Regular", size: 10))
                         
                             Text("Cosmo Connect")
                                 .font(.custom("Comfortaa-Regular", size: 30))
@@ -46,26 +43,8 @@ struct HomePage2: View {
                         sectionView(title: "")
 
                         Spacer()
-                        NavigationLink(destination: LightPollution2()) {
-                            Text("Learn More About Light Pollution")
-                                .font(.custom("Comfortaa-Regular", size: 20))
-                                .underline()
-                                .foregroundColor(Color.white)
-                        }
                         
-                        VStack() {
-                            Spacer()
-                            Spacer()
-                            Spacer()
-                            Spacer()
-                            Spacer()
-                            NavigationLink(destination: FavoritesView2(viewModel: viewModel)) {
-                                    Text("Go To Favorites")
-                                    .font(.custom("Comfortaa-Regular", size: 20))
-                                    .underline()
-                                    .foregroundColor(Color.white)
-                                }
-                        }
+
                         
                         
 

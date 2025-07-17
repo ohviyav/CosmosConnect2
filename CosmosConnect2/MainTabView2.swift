@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @StateObject private var viewModel = NasaImageViewModel()
     var body: some View {
         TabView {
             NavigationStack {
@@ -12,7 +13,7 @@ struct MainTabView: View {
             }
             
             NavigationStack {
-                LightPollution2()
+                FavoritesView2(viewModel: viewModel)
             }
             .tabItem {
                 Image(systemName: "suit.heart.fill")
