@@ -28,7 +28,6 @@ struct APODTotalInfo2: View {
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                             .padding()
-                        NavigationLink("Go to favorites", destination: FavoritesView2(viewModel: viewModel))
                         
                         AsyncImage(url: imageURL) { image in
                             image
@@ -38,6 +37,10 @@ struct APODTotalInfo2: View {
                         } placeholder: {
                             ProgressView()
                         }
+                        
+                        /*
+                        NavigationLink("Go to favorites", destination: FavoritesView2(viewModel: viewModel))
+                         */
                         
                         Text(apod.explanation)
                             .foregroundColor(.white)
