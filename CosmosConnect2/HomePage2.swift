@@ -51,6 +51,7 @@ struct HomePage2: View {
                         
                         NavigationLink(destination: LightPollution2()) {
                             Text("What is light pollution?")
+                                .foregroundColor(Color.white)
                             
                         }
                         sectionView2(title: "Section 2")
