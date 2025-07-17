@@ -15,30 +15,33 @@ struct NasaImageView2: View {
 
     var body: some View {
         ZStack {
+            //Color(.black).edgesIgnoringSafeArea(.all)
             VStack{
                 if let apod = viewModel.apodImage,
                    let imageURL = URL(string: apod.url) {
                     
                     Text("NASA Astronomy Picture Of The Day")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                    
-                    /*
-                    Text(apod.title)
+                        .underline()
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                         .padding()
-                    */
+                    
+                    
+                    Text(apod.title)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+                        //.padding()
+                
 
                     AsyncImage(url: imageURL) { image in
                         image
                             .resizable()
                             .scaledToFit()
-                            .frame(height: 300)
+                            .frame(height: 200)
                             .cornerRadius(12)
                     } placeholder: {
                         ProgressView()
@@ -57,7 +60,11 @@ struct NasaImageView2: View {
                     //adding favorite button
             
             HStack {
-                Spacer()
+                NavigationLink(destination:APODTotalInfo2()) {
+                    Text("Click Here To Learn More About Today's Photo")
+                        .underline()
+                        .foregroundColor(Color.white)
+                }
                 Button(action: {
                     viewModel.toggleFavorite()
                 }) {
@@ -67,6 +74,7 @@ struct NasaImageView2: View {
                     
                 }
             }
+            
              
                 
                 Spacer()

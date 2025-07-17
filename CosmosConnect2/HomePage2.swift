@@ -27,45 +27,30 @@ struct HomePage2: View {
                                 .frame(height: 35)
                                 .padding([.top, .leading, .trailing])
 
+                            
+                            //comment this out!
+                          // Text("guys i got it to work! Aa Bb Cc")
+                            //  .font(.custom("Comfortaa-Regular", size: 10))
+                        
                             Text("Cosmo Connect")
+                                .font(.custom("Comfortaa-Regular", size: 30))
                                 .font(.title)
-                                .fontWeight(.semibold)
+                                .fontWeight(.bold)
                                 .foregroundColor(Color.white)
                                 .padding(.top)
                             Spacer()
                         }
                         .padding(.top)
-                        Text("Welcome to Cosmo Connect (insert little desc)")
-                            .font(.caption)
-                
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.leading)
-                            .padding(.vertical)
-                        
                         //NASA Astronomy Picture Of The Day
-                        sectionView(title: "Section 1")
-                        NavigationLink(destination:APODTotalInfo2()) {
-                            Text("Click Here To Learn More About Today's Photo")
-                                .foregroundColor(Color.white)
-                        }
+                        sectionView(title: "")
+
                         
                         NavigationLink(destination: LightPollution2()) {
                             Text("What is light pollution?")
                                 .foregroundColor(Color.white)
                             
                         }
-                        sectionView2(title: "Section 2")
-
-                        Image("stars")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(height: 150)
-                            .clipped()
-                            .padding()
-
-                        Text("This is a placeholder")
-                            .font(.caption)
-                            .foregroundColor(.white)
+                        sectionView2(title: "")
 
                         Spacer()
                     }
@@ -84,34 +69,15 @@ func sectionView(title: String) -> some View {
             .font(.title2)
             .fontWeight(.semibold)
             .foregroundColor(.white)
-
-        Rectangle()
-            .fill(Color.gray.opacity(0.2))
-            .frame(height: 150)
-            .cornerRadius(10)
-            .overlay(
-                Text("Content Placeholder")
-                    .foregroundColor(.white)
-            )
     }
     .padding(.horizontal)
 }
 func sectionView2(title: String) -> some View {
     VStack(alignment: .leading, spacing: 8) {
-        LightPollution2()
         Text(title)
             .font(.title2)
             .fontWeight(.semibold)
             .foregroundColor(.white)
-
-        Rectangle()
-            .fill(Color.gray.opacity(0.2))
-            .frame(height: 150)
-            .cornerRadius(10)
-            .overlay(
-                Text("Content Placeholder")
-                    .foregroundColor(.white)
-            )
     }
     .padding(.horizontal)
 }
