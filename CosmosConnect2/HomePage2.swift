@@ -35,19 +35,9 @@ struct HomePage2: View {
                             Spacer()
                         }
                         .padding(.top)
-                        Text("Welcome to Cosmo Connect (insert little desc)")
-                            .font(.caption)
-                
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.leading)
-                            .padding(.vertical)
-                        
                         //NASA Astronomy Picture Of The Day
                         sectionView(title: "")
-                        NavigationLink(destination:APODTotalInfo2()) {
-                            Text("Click Here To Learn More About Today's Photo")
-                                .foregroundColor(Color.white)
-                        }
+
                         
                         NavigationLink(destination: LightPollution2()) {
                             Text("What is light pollution?")

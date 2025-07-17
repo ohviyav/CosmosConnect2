@@ -25,14 +25,14 @@ struct NasaImageView2: View {
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                     
-                    /*
+                    
                     Text(apod.title)
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                         .padding()
-                    */
+                
 
                     AsyncImage(url: imageURL) { image in
                         image
@@ -57,7 +57,10 @@ struct NasaImageView2: View {
                     //adding favorite button
             
             HStack {
-                Spacer()
+                NavigationLink(destination:APODTotalInfo2()) {
+                    Text("Click Here To Learn More About Today's Photo")
+                        .foregroundColor(Color.white)
+                }
                 Button(action: {
                     viewModel.toggleFavorite()
                 }) {
@@ -67,6 +70,7 @@ struct NasaImageView2: View {
                     
                 }
             }
+            
              
                 
                 Spacer()
