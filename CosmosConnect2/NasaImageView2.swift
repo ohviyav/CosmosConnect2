@@ -15,8 +15,7 @@ struct NasaImageView2: View {
 
     var body: some View {
         ZStack {
-            Color(.black).edgesIgnoringSafeArea(.all)
-            VStack {
+            VStack{
                 if let apod = viewModel.apodImage,
                    let imageURL = URL(string: apod.url) {
                     
