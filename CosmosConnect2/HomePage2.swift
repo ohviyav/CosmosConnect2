@@ -75,6 +75,8 @@ func sectionView2(title: String) -> some View {
     }
     .padding(.horizontal)
 }
+
 #Preview {
     HomePage2()
 }
+

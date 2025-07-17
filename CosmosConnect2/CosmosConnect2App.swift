@@ -11,7 +11,7 @@ import SwiftUI
 struct CosmosConnect2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
