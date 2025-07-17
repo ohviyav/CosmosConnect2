@@ -21,7 +21,6 @@ struct NasaImageView2: View {
                    let imageURL = URL(string: apod.url) {
                     
                     Text("NASA Astronomy Picture Of The Day")
-                        .underline()
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)

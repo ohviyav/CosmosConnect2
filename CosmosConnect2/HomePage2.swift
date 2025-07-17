@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomePage2: View {
+    @StateObject private var viewModel = NasaImageViewModel()
     var body: some View {
         NavigationStack {
             ZStack {
@@ -44,12 +45,27 @@ struct HomePage2: View {
                         //NASA Astronomy Picture Of The Day
                         sectionView(title: "")
 
-                        
                         NavigationLink(destination: LightPollution2()) {
                             Text("What is light pollution?")
+                                .underline()
                                 .foregroundColor(Color.white)
-                            
                         }
+                        
+                        VStack() {
+                            
+                            NavigationLink(destination: FavoritesView2(viewModel: viewModel)) {
+                                    Text("Go To Favorites")
+                                    .underline()
+                                    .foregroundColor(Color.white)
+                                }
+                        }
+                        
+                        
+
+                            
+                        
+                            
+                        
                         sectionView2(title: "")
 
                         Spacer()
