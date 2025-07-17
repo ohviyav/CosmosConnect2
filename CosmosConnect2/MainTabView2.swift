@@ -1,25 +1,32 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @StateObject private var viewModel = NasaImageViewModel()
     var body: some View {
         TabView {
-            HomePage2()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
-
-            Text("Search Page")
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Search")
-                }
-
-            Text("Profile Page")
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Profile")
-                }
+            NavigationStack {
+                HomePage2()
+            }
+            .tabItem {
+                Image(systemName: "house.fill")
+                Text("Home")
+            }
+            
+            NavigationStack {
+                FavoritesView2(viewModel: viewModel)
+            }
+            .tabItem {
+                Image(systemName: "suit.heart.fill")
+                Text("Favorites")
+            }
+            
+            NavigationStack {
+                LightPollution2()
+            }
+            .tabItem {
+                Image(systemName: "rays")
+                Text("Light Pollution")
+            }
         }
     }
 }
