@@ -43,7 +43,7 @@ struct HomePage2: View {
                         sectionView(title: "")
 
                         Spacer()
-                        
+                        NavigationLink("Resources can be found here", destination: Links()).foregroundColor(Color.white)                     
 
                         
                         
