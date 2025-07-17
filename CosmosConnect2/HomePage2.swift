@@ -46,13 +46,15 @@ struct HomePage2: View {
                         sectionView(title: "Section 1")
                         NavigationLink(destination:APODTotalInfo2()) {
                             Text("Click Here To Learn More About Today's Photo")
+                                .foregroundColor(Color.white)
                         }
                         
                         NavigationLink(destination: LightPollution2()) {
                             Text("What is light pollution?")
+                                .foregroundColor(Color.white)
+                            
                         }
-                        //sectionView2(title: "Section 2")
-                        //sectionView(title: "Section 3")
+                        sectionView2(title: "Section 2")
 
                         Image("stars")
                             .resizable()
@@ -78,7 +80,6 @@ struct HomePage2: View {
 func sectionView(title: String) -> some View {
     VStack(alignment: .leading, spacing: 8) {
         NasaImageView2()
-        /*
         Text(title)
             .font(.title2)
             .fontWeight(.semibold)
@@ -92,14 +93,12 @@ func sectionView(title: String) -> some View {
                 Text("Content Placeholder")
                     .foregroundColor(.white)
             )
-         */
     }
     .padding(.horizontal)
 }
-/*func sectionView2(title: String) -> some View {
+func sectionView2(title: String) -> some View {
     VStack(alignment: .leading, spacing: 8) {
-        LightPollution()
-        /*
+        LightPollution2()
         Text(title)
             .font(.title2)
             .fontWeight(.semibold)
@@ -113,10 +112,9 @@ func sectionView(title: String) -> some View {
                 Text("Content Placeholder")
                     .foregroundColor(.white)
             )
-         */
     }
     .padding(.horizontal)
-}*/
+}
 #Preview {
     HomePage2()
 }
