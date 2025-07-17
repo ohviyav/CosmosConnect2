@@ -10,9 +10,22 @@
 		BDC733762E28430B00AF0E64 /* CosmosConnect2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CosmosConnect2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BDC733DB2E29630300AF0E64 /* Exceptions for "CosmosConnect2" folder in "CosmosConnect2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BDC733752E28430B00AF0E64 /* CosmosConnect2 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BDC733782E28430B00AF0E64 /* CosmosConnect2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BDC733DB2E29630300AF0E64 /* Exceptions for "CosmosConnect2" folder in "CosmosConnect2" target */,
+			);
 			path = CosmosConnect2;
 			sourceTree = "<group>";
 		};
@@ -253,7 +266,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CosmosConnect2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "/Users/scholar/Downloads/Beige Phone Wallpaper Mockup Your Story.gif";
@@ -281,7 +294,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CosmosConnect2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "/Users/scholar/Downloads/Beige Phone Wallpaper Mockup Your Story.gif";
