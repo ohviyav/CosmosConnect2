@@ -56,17 +56,6 @@ struct HomePage2: View {
                         }
                         sectionView2(title: "")
 
-                        Image("stars")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(height: 150)
-                            .clipped()
-                            .padding()
-
-                        Text("This is a placeholder")
-                            .font(.caption)
-                            .foregroundColor(.white)
-
                         Spacer()
                     }
                     .padding()
@@ -89,7 +78,6 @@ func sectionView(title: String) -> some View {
 }
 func sectionView2(title: String) -> some View {
     VStack(alignment: .leading, spacing: 8) {
-        LightPollution2()
         Text(title)
             .font(.title2)
             .fontWeight(.semibold)
