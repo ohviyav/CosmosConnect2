@@ -21,8 +21,8 @@ struct NasaImageView2: View {
                    let imageURL = URL(string: apod.url) {
                     
                     Text("NASA Astronomy Picture Of The Day")
-                        .font(.title2)
-                        .fontWeight(.bold)
+                        .font(.title)
+                        .fontWeight(.medium)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                         .padding()
@@ -61,6 +61,7 @@ struct NasaImageView2: View {
             HStack {
                 NavigationLink(destination:APODTotalInfo2()) {
                     Text("Click Here To Learn More About Today's Photo")
+                        .font(.custom("Comfortaa-Regular", size: 20))
                         .underline()
                         .foregroundColor(Color.white)
                 }
