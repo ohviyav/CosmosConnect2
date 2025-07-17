@@ -43,7 +43,7 @@ struct HomePage2: View {
                             .padding(.vertical)
                         
                         //NASA Astronomy Picture Of The Day
-                        sectionView(title: "Section 1")
+                        sectionView(title: "")
                         NavigationLink(destination:APODTotalInfo2()) {
                             Text("Click Here To Learn More About Today's Photo")
                                 .foregroundColor(Color.white)
@@ -54,7 +54,7 @@ struct HomePage2: View {
                                 .foregroundColor(Color.white)
                             
                         }
-                        sectionView2(title: "Section 2")
+                        sectionView2(title: "")
 
                         Image("stars")
                             .resizable()
@@ -84,15 +84,6 @@ func sectionView(title: String) -> some View {
             .font(.title2)
             .fontWeight(.semibold)
             .foregroundColor(.white)
-
-        Rectangle()
-            .fill(Color.gray.opacity(0.2))
-            .frame(height: 150)
-            .cornerRadius(10)
-            .overlay(
-                Text("Content Placeholder")
-                    .foregroundColor(.white)
-            )
     }
     .padding(.horizontal)
 }
@@ -103,15 +94,6 @@ func sectionView2(title: String) -> some View {
             .font(.title2)
             .fontWeight(.semibold)
             .foregroundColor(.white)
-
-        Rectangle()
-            .fill(Color.gray.opacity(0.2))
-            .frame(height: 150)
-            .cornerRadius(10)
-            .overlay(
-                Text("Content Placeholder")
-                    .foregroundColor(.white)
-            )
     }
     .padding(.horizontal)
 }
